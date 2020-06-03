@@ -41,8 +41,8 @@ export default class Palette extends Component {
 				<div className="Palette-colors">{colorBoxes}</div>
 				{/* footer */}
 				<footer className="Palette-footer">
-					{paletteName}
 					
+					{paletteName}
 					<span id="emoji">{emoji}</span>
 
 				</footer>
