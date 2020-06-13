@@ -1,14 +1,25 @@
-.ColorBox{
+/* .ColorBox{
     width: 20%;
     height: 25%;
+    margin: 0 auto;
+    margin-top:-5px;
     display: inline-block;
     position: relative;
-    margin: 0 auto;
     cursor: pointer;
+} */
+
+/* .SingleColorPalette .ColorBox{
+    height: 50%;
+} */
+
+ /* go back div */
+
+.ColorBox.go-back{
+    background-color: black;
+  
 }
 
-
-.copy-button{
+.copy-button,.back-button{
     width: 100px;
     height:30px;
     position: absolute;
@@ -19,26 +30,27 @@
     display: inline-block;
     text-align: center;
     outline: none;
+    color:white;
     background: rgba(255,255,255,0.3);
     font-size:1rem;
     text-transform: uppercase;
     border:none;
-    opacity: 0;
-    margin-bottom: -3.5px
-    ;
+   text-decoration: none;
+    margin-bottom: -3.5px;
     
+}
+
+/* .copy-button{
+    opacity: 0;
 }
 
 .ColorBox:hover .copy-button{
     opacity: 1;
     transition:0.5;
-    -webkit-transition:0.5;
-    -moz-transition:0.5;
-    -ms-transition:0.5;
-    -o-transition:0.5;
-}
+   
+} */
 
-.box-content{
+/* .box-content{
     position: absolute;
     width:100%;
     left:0px;
@@ -48,6 +60,14 @@
     letter-spacing:1px;
     text-transform: uppercase;
     font-size: 12px;
+} */
+
+/* .light-text{
+    color:white;
+}
+
+.ColorBox .dark-text{
+    color:rgba(0, 0, 0, 0.5);
 }
 
 .see-more{
@@ -61,9 +81,9 @@
     height: 30px;
     line-height: 30px;
     text-align: center;
-}
+} */
 
-.copy-overlay{
+/* .copy-overlay{
     opacity: 0;
     z-index: 0;
     width: 100%;
@@ -84,9 +104,9 @@
     -o-transform: scale(50);
     z-index: 10;
     position: absolute;
-}
+} */
 
-.copy-msg{
+/* .copy-msg{
     left:0;
     right:0;
     top:0;
@@ -101,9 +121,9 @@
     opacity: 0;
     color:white;
 
-}
+} */
 
-.copy-msg.show{
+/* .copy-msg.show{
     z-index: 25;
     opacity:1;
     transform: scale(1);
@@ -117,7 +137,7 @@
     -moz-transition: all 0.4s ease-in-out    ;
     -ms-transition: all 0.4s ease-in-out    ;
     -o-transition: all 0.4s ease-in-out    ;
-}
+} */
 
 .copy-msg h1{
     font-weight: 400;

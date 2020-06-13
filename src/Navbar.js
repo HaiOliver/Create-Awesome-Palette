@@ -27,7 +27,7 @@ export default class Narbar extends Component {
         this.setState({open: false})
     }
 	render() {
-		const { level, changeLevel} = this.props;
+		const { level, changeLevel,showingAllColors} = this.props;
 		const { format } = this.state;
 		return (
 			<header className="NavBar">
@@ -37,7 +37,10 @@ export default class Narbar extends Component {
 					</Link>
 				
 				</div>
-				<div className="slider-container">
+				{/* show slide bar level */}
+				{
+					showingAllColors && (
+					<div className="slider-container">
 					<span>Level:{level}</span>
 					<div className="slider">
 						<Slider
@@ -48,7 +51,9 @@ export default class Narbar extends Component {
 							onAfterChange={changeLevel}
 						/>
 					</div>
-				</div>
+				</div>)
+				}
+				
                 {/* // change format rgb */}
 				<div className="select-container">
 					<Select value={format} onChange={this.handleFormatChange}>
